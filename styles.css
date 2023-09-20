@@ -1,0 +1,337 @@
+@import url(./vendor/normalize.css);
+
+@import url(./vendor/fonts/fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project {
+  max-width: 390px;
+  min-width: 390px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #f19d2f;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.header__title {
+  color: #2c2b31;
+  text-align: center;
+  font-family: "GothamPro";
+  font-size: 12.694px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.promo {
+  background-color: #ffd1ac;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.promo__svg {
+  width: 218px;
+  height: 31px;
+  margin: 19px 0 10px;
+}
+
+.promo__title {
+  color: #2c2b31;
+  text-align: center;
+  font-family: "GothamPro";
+  font-size: 13.469px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 19px;
+}
+
+.promo__svg-circle {
+  position: absolute;
+  top: 27px;
+  right: 141px;
+}
+
+.promo__timer {
+  width: 103px;
+  height: 58px;
+  position: absolute;
+  bottom: 14px;
+  left: 13px;
+  border-radius: 7.101px;
+  background-color: #f19d2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.promo__timer-label {
+  color: #fff;
+  font-family: "GothamPro";
+  font-size: 10.599px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.promo__timer-counter {
+  color: #fff;
+  font-family: "GothamPro";
+  font-size: 21.254px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.promo__price {
+  width: 116px;
+  height: 58px;
+  position: absolute;
+  bottom: 14px;
+  right: 13px;
+  border-radius: 5.677px;
+  background-color: #37d997;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__price-discount {
+  color: #fff;
+  font-family: "GothamPro";
+  font-size: 18.077px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.promo__price-discount::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  right: 10px;
+  border-top: 3.5px solid #e27500;
+}
+
+.promo__price-actual {
+  color: #fff;
+  font-family: "GothamPro";
+  font-size: 22.301px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 11px 16px 41px;
+  background-color: #f0f0f0;
+}
+
+.purchase__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchase__rate {
+  color: #2c2b31;
+  font-family: "GothamPro";
+  font-size: 12.067px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.purchase__best {
+  color: #37d997;
+  text-align: right;
+  font-family: "GothamPro";
+  font-size: 12.067px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.purchase__title {
+  color: #2c2b31;
+  font-family: "GothamPro";
+  font-size: 19.168px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.purchase__list {
+  list-style-type: none;
+  display: flex;
+  gap: 12px;
+}
+
+.purchase__list-item:hover {
+  cursor: pointer;
+}
+
+.purchase__list-info {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.purchase__list-info-item {
+  color: #000;
+  font-family: "GothamPro";
+  font-size: 15.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.purchase__span {
+  font-weight: 700;
+}
+
+.purchase__rating-result {
+  width: 102px;
+}
+.purchase__rating-result span {
+  padding: 0;
+  font-size: 20px;
+  margin: 0;
+  color: #f8b656;
+}
+.purchase__rating-result > span:before {
+  content: "★";
+}
+
+.purchase__list-info li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.purchase__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 356px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #37d997;
+
+  color: #fff;
+  text-align: center;
+  font-family: "GothamPro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.purchase__color {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+
+  width: 170px;
+  height: 50px;
+
+  border: none;
+  border-radius: 15px;
+
+  text-align: center;
+  font-family: "GothamPro";
+  font-size: 21.69px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.purchase__size {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+
+  width: 170px;
+  height: 50px;
+
+  border: none;
+  border-radius: 15px;
+
+  text-align: center;
+  font-family: "GothamPro";
+  font-size: 21.69px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.purchase__label {
+  color: #2c2b31;
+  text-align: center;
+  font-family: "GothamPro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.purchase__list-inputs {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.active {
+  opacity: 0.4;
+}
+
+.purchase__selected img:not(:first-child) {
+  display: none;
+}
